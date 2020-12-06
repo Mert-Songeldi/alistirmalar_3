@@ -1,0 +1,13 @@
+
+
+dizi = [4,2,-9,56,-3,7,12]
+
+def bubble_sort(dizi):
+    for i in range(len(dizi)-1):
+        for j in range(len(dizi) -1 - i):
+            if dizi[j] > dizi[j+1]:
+                dizi[j],dizi[j+1]=dizi[j+1],dizi[j]
+
+
+bubble_sort(dizi)
+print(dizi)
